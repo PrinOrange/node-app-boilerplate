@@ -1,7 +1,7 @@
 const path = require("path");
 const TerserPlugin = require("terser-webpack-plugin");
 
-module.exports = {
+const WebpackDevelopmentConfiguration = {
   entry: "./src/index.ts",
   optimization: {
     minimize: false,
@@ -12,7 +12,7 @@ module.exports = {
     ],
   },
   target: "node",
-  mode: "production",
+  mode: "development",
   module: {
     rules: [
       {
@@ -27,6 +27,8 @@ module.exports = {
   },
   output: {
     filename: "index.js",
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "../dist"),
   },
 };
+
+module.exports = WebpackDevelopmentConfiguration;

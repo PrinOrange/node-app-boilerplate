@@ -3,6 +3,7 @@ const TerserPlugin = require("terser-webpack-plugin");
 
 const WebpackDevelopmentConfiguration = {
   entry: "./src/index.ts",
+  devtool: "cheap-module-source-map",
   optimization: {
     minimize: false,
     minimizer: [

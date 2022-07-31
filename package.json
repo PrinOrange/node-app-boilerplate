@@ -8,14 +8,23 @@
     "start": "node ./build/index.js",
     "build": "webpack --config ./config/webpack.prod.config.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clean":"node ./scripts/clean.js"
+    "clean": "node ./scripts/clean.js"
   },
-  "keywords": ["nodejs","webpack","typescript","boilerplate"],
+  "keywords": [
+    "nodejs",
+    "webpack",
+    "typescript",
+    "boilerplate"
+  ],
   "author": "PrinOrange",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^18.6.3",
     "@types/webpack": "^5.28.0",
+    "@typescript-eslint/eslint-plugin": "^5.31.0",
+    "@typescript-eslint/parser": "^5.31.0",
+    "eslint": "^8.20.0",
+    "eslint-config-google": "^0.14.0",
     "ts-loader": "^9.3.1",
     "ts-node": "^10.9.1",
     "typescript": "^4.7.4",

@@ -1,5 +1,5 @@
 
-console.log('Hello World!');
+console.log('apt');
 
 /*
     This is the boilerplate for nodejs with typescript,

@@ -10,7 +10,7 @@
     "dev": "webpack --config ./config/webpack.dev.config.ts --watch",
     "start": "npm run build:prod && node ./build/prod/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "node ./scripts/clean.js"
+    "clean": "npx ts-node ./scripts/clean.js"
   },
   "keywords": [
     "nodejs",

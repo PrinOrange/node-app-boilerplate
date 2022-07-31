@@ -1,8 +1,9 @@
-const path = require('path');
-const TerserPlugin = require('terser-webpack-plugin');
-const NodemonPlugin = require('nodemon-webpack-plugin');
+import * as webpack from 'webpack';
+import NodemonPlugin from 'nodemon-webpack-plugin';
+import path from 'path';
+import TerserPlugin from 'terser-webpack-plugin';
 
-const WebpackDevelopmentConfiguration = {
+export const WebpackDevelopmentConfiguration: webpack.Configuration = {
   entry: './src/index.ts',
   devtool: 'cheap-module-source-map',
   optimization: {
@@ -38,4 +39,4 @@ const WebpackDevelopmentConfiguration = {
   ],
 };
 
-module.exports = WebpackDevelopmentConfiguration;
+export default WebpackDevelopmentConfiguration;

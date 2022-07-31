@@ -1,7 +1,8 @@
-const path = require('path');
-const TerserPlugin = require('terser-webpack-plugin');
+import * as webpack from 'webpack';
+import path from 'path';
+import TerserPlugin from 'terser-webpack-plugin';
 
-const WebpackProductionConfiguration = {
+export const WebpackProductionConfiguration:webpack.Configuration = {
   entry: './src/index.ts',
   devtool: 'cheap-module-source-map',
   optimization: {
@@ -32,4 +33,4 @@ const WebpackProductionConfiguration = {
   },
 };
 
-module.exports = WebpackProductionConfiguration;
+export default WebpackProductionConfiguration;

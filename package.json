@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean":"node ./scripts/clean.js"
   },
-  "keywords": [],
+  "keywords": ["nodejs","webpack","typescript","boilerplate"],
   "author": "PrinOrange",
   "license": "MIT",
   "devDependencies": {
